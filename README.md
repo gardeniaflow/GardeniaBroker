@@ -46,9 +46,3 @@
     </script>
 </body>
 </html>
-
-        // Call the function to load the chatbot script
-        loadChatbotScript();
-    </script>
-</body>
-</html>
