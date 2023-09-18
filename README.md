@@ -7,13 +7,7 @@
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
     <script>
-        function generateClientId() {
-            // Generate a random string, e.g., using a timestamp
-            return 'client-' + Date.now();
-        }
-
         function loadChatbotScript() {
-            var clientId = generateClientId(); // Generate a unique clientId
             var script = document.createElement('script');
             script.src = 'https://cdn.botpress.cloud/webchat/v0/inject.js';
             script.async = true;
@@ -22,7 +16,7 @@
             script.onload = function () {
                 window.botpressWebChat.init({
                     "botId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
-                    "clientId": clientId, // Use the generated clientId
+                    "clientId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
                     "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "botName": "Gardenia",
@@ -40,9 +34,3 @@
                 }, ['LIFECYCLE.LOADED']);
             };
         }
-
-        // Call the function to load the chatbot script
-        loadChatbotScript();
-    </script>
-</body>
-</html>
