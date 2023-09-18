@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gardeniatest3</title>
+    <title>Your Website Title</title>
 </head>
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
@@ -34,3 +34,9 @@
                 }, ['LIFECYCLE.LOADED']);
             };
         }
+
+        // Call the function to load the chatbot script
+        loadChatbotScript();
+    </script>
+</body>
+</html>
