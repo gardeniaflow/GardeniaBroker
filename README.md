@@ -20,7 +20,7 @@
                     "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "botName": "Gardenia",
-                    "avatarUrl": "https://i.postimg.cc/YC8DyGW1/Screenshot-2023-09-13-213012.jpg",
+                    "avatarUrl": "https://i.postimg.cc/NMYxmYRP/image502-1695792437594.jpg",
                     "containerWidth": "100%25",
                     "layoutWidth": "100%25",
                     "composerPlaceholder": "Start typing here",
