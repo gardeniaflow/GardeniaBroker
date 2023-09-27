@@ -28,8 +28,8 @@
                     "hideWidget": true,
                     "useSessionStorage": true,
                     "disableAnimations": true,
-                    "lazySocket": true,
-                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/5ce2b2c8-4482-424a-8e12-ad6bba19692c/v10440/style.css",
+                    "lazySocket": false,
+                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/5ce2b2c8-4482-424a-8e12-ad6bba19692c/v62394/style.css",
                     "frontendVersion": "v1",
                     "enableConversationDeletion": true
                 });
