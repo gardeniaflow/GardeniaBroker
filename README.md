@@ -28,6 +28,8 @@
                     "hideWidget": true,
                     "useSessionStorage": true,
                     "disableAnimations": true,
+                    "lazySocket": true,
+                    "frontendVersion": "v1",
                     "enableConversationDeletion": true
                 });
                 window.botpressWebChat.onEvent(function () {
