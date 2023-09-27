@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Gardenia Brokers</title>
 </head>
 <body>
     <!-- JavaScript to load the chatbot asynchronously -->
@@ -15,8 +15,8 @@
 
             script.onload = function () {
                 window.botpressWebChat.init({
-                    "botId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
-                    "clientId": "0e30855c-6873-4f87-9de6-b3352a0622b3",
+                    "botId": "e6af95fa-3798-43ed-a982-388667fe3a11",
+                    "clientId": "e6af95fa-3798-43ed-a982-388667fe3a11",
                     "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
                     "messagingUrl": "https://messaging.botpress.cloud",
                     "botName": "Gardenia",
@@ -26,6 +26,7 @@
                     "composerPlaceholder": "Start typing here",
                     "botConversationDescription": "Your Property Partner",
                     "hideWidget": true,
+                    "useSessionStorage": true,
                     "disableAnimations": true,
                     "enableConversationDeletion": true
                 });
