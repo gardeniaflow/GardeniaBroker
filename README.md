@@ -9,7 +9,7 @@
     <script>
         function loadChatbotScript() {
             var script = document.createElement('script');
-            script.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js';
+            script.src = 'https://cdn.botpress.cloud/webchat/v0/inject.js';
             script.async = true;
             document.body.appendChild(script);
 
