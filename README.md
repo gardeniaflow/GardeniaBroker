@@ -30,6 +30,7 @@
                     "disableAnimations": true,
                     "lazySocket": true,
                     "frontendVersion": "v1",
+                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/5ce2b2c8-4482-424a-8e12-ad6bba19692c/v17650/style.css",
                     "enableConversationDeletion": true
                 });
                 window.botpressWebChat.onEvent(function () {
