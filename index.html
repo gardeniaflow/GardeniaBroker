@@ -1,10 +1,43 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gardenia Brokers</title>
+    
+    <style>
+        /* CSS for preloading overlay */
+        .preload-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white; /* You can change the background color */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .preload-logo {
+            max-width: 100%; /* Ensure the logo fits within the screen */
+        }
+        .loading-text {
+            font-size: 24px; /* Adjust the font size as needed */
+            font-weight: bold;
+            color: #66ba69;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Preloading overlay with your logo and loading text -->
+    <div class="preload-overlay">
+        <img src="https://i.postimg.cc/NMYxmYRP/image502-1695792437594.jpg" alt="Your Logo" class="preload-logo">
+        <p class="loading-text">Loading...</p>
+    </div>
+
     <!-- JavaScript to load the chatbot asynchronously -->
     <script>
         function loadChatbotScript() {
@@ -14,6 +47,15 @@
             document.body.appendChild(script);
 
             script.onload = function () {
+                // Hide the preloading overlay after 8 seconds (8000 milliseconds)
+                setTimeout(function () {
+                    var preloadOverlay = document.querySelector('.preload-overlay');
+                    if (preloadOverlay) {
+                        preloadOverlay.style.display = 'none';
+                    }
+                }, 8000);
+
+                // Initialize the chatbot
                 window.botpressWebChat.init({
                     "botId": "e6af95fa-3798-43ed-a982-388667fe3a11",
                     "clientId": "e6af95fa-3798-43ed-a982-388667fe3a11",
@@ -26,13 +68,14 @@
                     "composerPlaceholder": "Start typing here",
                     "botConversationDescription": "Your Property Partner",
                     "hideWidget": true,
-                    "useSessionStorage": true,
+                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/5ce2b2c8-4482-424a-8e12-ad6bba19692c/v62394/style.css",
                     "disableAnimations": true,
                     "lazySocket": false,
-                    "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/5ce2b2c8-4482-424a-8e12-ad6bba19692c/v62394/style.css",
+                    "useSessionStorage": true,
                     "frontendVersion": "v1",
                     "enableConversationDeletion": true
                 });
+
                 window.botpressWebChat.onEvent(function () {
                     window.botpressWebChat.sendEvent({ type: 'show' });
                 }, ['LIFECYCLE.LOADED']);
